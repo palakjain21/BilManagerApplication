@@ -62,7 +62,7 @@ export default function Table({ data }) {
     } else {
       // return filterData.filter((item) => item.category === value);
       console.log(filterData.filter((item) => item.category === value));
-      setFilterData(filterData.filter((item) => item.category === value));
+      setFilterData(data.filter((item) => item.category === value));
     }
   };
 
