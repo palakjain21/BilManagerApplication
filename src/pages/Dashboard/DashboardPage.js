@@ -4,6 +4,8 @@ import Charts from "../../components/Chart/Chart";
 import "./DashboardPage.css";
 import { useSelector } from "react-redux";
 import Table from "../../components/Table/Table";
+import { useNavigate } from "react-router-dom";
+
 const DashboardPage = () => {
   const bills = useSelector((state) => state.bills.billList);
   //   const bills = store.getState();
@@ -28,7 +30,11 @@ const DashboardPage = () => {
     console.log(bills);
   }, [bills]);
 
-  return (
+  const navigation = useNavigate();
+  const handleNavigate = () => {
+    navigation("/new");
+  };
+  return bills && bills.length ? (
     <div className="dashboard">
       <div className="d-flex w-50 justify-content-center">
         <Charts bills={bills} />
@@ -38,6 +44,21 @@ const DashboardPage = () => {
         <Table data={payBills(bills)} />
       </div>
     </div>
+  ) : (
+    <>
+      <div className="d-flex justify-content-center w-100 mt-3">
+        No data to display! Create a bill first
+      </div>
+      <div className="d-flex justify-content-center w-100">
+        <button
+          className="btn btn-info btnWidth"
+          type="button"
+          onClick={handleNavigate}
+        >
+          Create New Bill
+        </button>
+      </div>
+    </>
   );
 };
 

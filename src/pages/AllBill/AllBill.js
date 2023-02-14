@@ -24,7 +24,13 @@ export default function AllBillPage() {
 
   return (
     <div>
-      {bills && bills.length ? <Table data={bills} /> : <></>}
+      {bills && bills.length ? (
+        <Table data={bills} />
+      ) : (
+        <div className="d-flex justify-content-center w-100 mt-3">
+          No data to display! Create a bill first
+        </div>
+      )}
       {/* <div className="d-grid gap-2">
         <button className="btn btn-light" type="button">
           Total Amount:
