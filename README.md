@@ -32,7 +32,7 @@ The app uses following libraries/packages for development, build and deployment:
     React-Router - A package that provides the core routing functionality for React Router
     React-Chartjs-2 - an open-source JavaScript library to draw different types of charts by using the HTML5 canvas element
     LocalStorage - Not a library but a feature that this app uses local storage to store data(temporary storage) and to maintain the new bill id
-    Vercel (formerly ZEIT) - for Instant static deploys
+    Vercel - for Instant static deploys
 
 ### Screen 1: Dashboard
 
