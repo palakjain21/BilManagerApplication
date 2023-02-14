@@ -130,10 +130,11 @@ export default function Charts({ bills }) {
           aria-label="Default select example"
           onChange={(e) => setYearSelected(e.target.value)}
         >
-          <option selected>Select Year</option>
-          {Object.keys(YearmonthMap).map((year) => (
-            <option value={year}>{year}</option>
-          ))}
+          <option value={yearSelected}>{yearSelected}</option>
+          {Object.keys(YearmonthMap).map((year) => {
+            if (year !== yearSelected)
+              return <option value={year}>{year}</option>;
+          })}
         </select>
       </div>
     </div>
