@@ -29,19 +29,19 @@ The app uses following libraries/packages for development, build and deployment:
     LocalStorage - Not a library but a feature that this app uses local storage to store data(temporary storage) and to maintain the new bill id
     Vercel (formerly ZEIT) - for Instant static deploys
 
-# Screen 1: Dashboard
+### Screen 1: Dashboard
 
 This screen contains time-series chart of the monthly billing cycle and the priority bill list, for which we have taken 1111 as our monthly budget.
 
-# Screen 2: Create New Bill
+### Screen 2: Create New Bill
 
 This screen contains simple form to add new bill.
 
-# Screen 3: All Bills
+### Screen 3: All Bills
 
 This screen contains table showing all the bills. There's an option where the user can filter the bills category-wise.
 
-# Screen 4: Edit Bills
+### Screen 4: Edit Bills
 
 This screen contains editable forms.
 
