@@ -1,3 +1,6 @@
+![Screenshot from 2023-02-14 23-18-18](https://user-images.githubusercontent.com/56087514/218817315-fdc15c6d-f3e6-4081-995b-4887e2551257.png)
+![Screenshot from 2023-02-14 23-18-24](https://user-images.githubusercontent.com/56087514/218817332-00284135-7ce9-4ece-b100-3a1622539d2b.png)
+![Screenshot from 2023-02-14 23-18-31](https://user-images.githubusercontent.com/56087514/218817337-573b10ef-eed2-4bf6-b10a-0b488f54050b.png)
 # Link
 
 The app is deployed on "https://bil-manager-application.vercel.app/"
