@@ -43,10 +43,9 @@ export default function CreateNewBill() {
     };
     // localStorage.setItem("bills", JSON.stringify(bill));
     console.log(bill);
-    // dispatch(addBill(bill));
+    dispatch(addBill(bill));
     toast.success("Bill Created Successfully");
-    // toast.success("Signed up successfully!!!");
-    // navigate("/allBills");
+    navigate("/allBills");
   };
 
   return (
